@@ -1,7 +1,4 @@
 <template>
-  <div id="homepage">
-    <header/>
-  </div>
   <div class="home">
     <HelloWorld msg="V-Zoo"/>
   </div>
