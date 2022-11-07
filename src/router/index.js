@@ -6,6 +6,7 @@ import Desierto from "@/components/Desierto";
 import InformacionCuenta from "@/components/InformacionCuenta";
 import tundra from "@/components/Tundra";
 import selva from "@/components/Selva";
+import Oceano from "@/components/Oceano";
 
 const routes = [
   {path: '/', name: 'home', component: HomeView},
@@ -14,7 +15,8 @@ const routes = [
   {path: '/desierto', name:'desierto', component: Desierto},
   {path: '/informacioncuenta', name:'informacioncuenta', component: InformacionCuenta},
   {path: '/tundra', name:'tundra', component: tundra},
-  {path: '/selva', name:'selva', component: selva}
+  {path: '/selva', name:'selva', component: selva},
+  {path: '/oceano', name:'Oceano', component: Oceano}
 ]
 
 const router = createRouter({
