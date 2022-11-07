@@ -8,7 +8,9 @@
     <div id="Medio_Del_Header">
     <div id="Home_Game">
       <nav>
-        <router-link to="/">Home</router-link>
+        <span class="s">
+          <router-link to="/">Home</router-link>
+        </span>
         <router-link to="/game">Game</router-link>
       </nav>
       <router-view/>
@@ -104,6 +106,8 @@ img {
   font-style: italic;
   font-size: 20px;
   padding-right: 250px;
+  margin-top: -50px;
+  margin-bottom: -25px;
 }
 
 #menu-container {
@@ -123,5 +127,10 @@ img {
   color: #fff;
   font-weight: bold;
 }
-
+.s{
+  padding-right: 50px;
+}
+nav{
+  margin-bottom: -50px;
+}
 </style>
