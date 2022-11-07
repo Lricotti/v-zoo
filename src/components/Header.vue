@@ -63,7 +63,7 @@ export default {
   background: #f6f4ef;
   border-bottom: 2px solid gray;
   padding-bottom: -1000px;
-  box-shadow: 0 4px darkgrey;
+  box-shadow: 0 4px lightgreen;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;

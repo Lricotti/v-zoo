@@ -42,12 +42,12 @@ export default {
   display: inline-block;
   margin-left: 5px;
   width: 300px;
-  background-color: #eee;
   border: 5px double rgb(109, 55, 55);
   border-radius: 5px;
   text-align: center;
   margin-bottom: 5px;
   height: 1290px;
+  background-color: #c7a17a;
 }
 .fecha{
   border-bottom: 1px solid black;
