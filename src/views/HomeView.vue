@@ -3,7 +3,6 @@
     <header/>
   </div>
   <div class="home">
-    <img alt="V-Zoo logo" src="../assets/Logofinal.png">
     <HelloWorld msg="V-Zoo"/>
   </div>
 </template>
