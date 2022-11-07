@@ -1,7 +1,7 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">Game</router-link>
+    <router-link to="/game">Game</router-link>
   </nav>
   <router-view/>
 </template>
