@@ -48,6 +48,7 @@ export default {
   justify-content: space-between;
 }
 #div-SideBar {
+  margin-top: 5px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
