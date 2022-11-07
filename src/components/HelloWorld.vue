@@ -52,6 +52,7 @@ export default {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-left: -10px;
 }
 
 

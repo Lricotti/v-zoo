@@ -1,12 +1,22 @@
 <template>
   <div id="Contenido_Total">
-    <div>
+    <div id="Izq">
       <img src="@/assets/Logofinal.png" alt="logo_pagina">
     </div>
 
+
     <div id="Medio_Del_Header">
+    <div id="Home_Game">
+      <nav>
+        <router-link to="/">Home</router-link>
+        <router-link to="/game">Game</router-link>
+      </nav>
+      <router-view/>
+    </div>
     <h1 id="NombrePagina">{{ Nombre }}</h1>
-    <h4 id="Eslogan">{{ Eslogan }}</h4>
+      <div id="Eslogan_Negativo">
+        <h4 id="Eslogan">{{ Eslogan }}</h4>
+      </div>
     </div>
 
     <div class="Derecha_del_Header">
@@ -50,7 +60,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   background: #f6f4ef;
   border-bottom: 2px solid gray;
-  padding: 10px;
+  padding-bottom: -1000px;
   box-shadow: 0 4px darkgrey;
   display: flex;
   flex-direction: row;
@@ -58,9 +68,13 @@ export default {
   justify-content: space-around;
   align-items: center;
 }
+#Izq{
+  margin-left: -165px;
+}
+
 
 img {
-  max-width: 420px;
+  max-width: 650px;
   border-radius: 50%;
 }
 
@@ -68,15 +82,28 @@ img {
   text-align: center;
 }
 
+#Home_Game{
+  font-size: 25px;
+  padding-right: 250px;
+}
+
+
+
 #NombrePagina {
   font-family: "Freestyle Script";
   font-style: italic;
-  font-size: 500%;
+  font-size: 700%;
+  padding-right: 250px;
+}
+
+#Eslogan_Negativo{
+  margin-top: -3px;
 }
 
 #Eslogan {
   font-style: italic;
-  font-size: 12px;
+  font-size: 20px;
+  padding-right: 250px;
 }
 
 #menu-container {
