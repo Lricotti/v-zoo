@@ -11,9 +11,11 @@
 
     <div class="Derecha_del_Header">
         <div style="width: 145px">
-          <div id="menu-container" v-if="showButton">
-            {{ Boton }}
-          </div>
+          <router-link to="Registro">
+            <div id="menu-container" v-if="showButton">
+             {{ Boton }}
+            </div>
+          </router-link>
         </div>
 
     </div>

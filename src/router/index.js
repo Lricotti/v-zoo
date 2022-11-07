@@ -16,7 +16,7 @@ const routes = [
   {path: '/informacioncuenta', name:'informacioncuenta', component: InformacionCuenta},
   {path: '/tundra', name:'tundra', component: tundra},
   {path: '/selva', name:'selva', component: selva},
-  {path: '/oceano', name:'Oceano', component: Oceano}
+  {path: '/oceano', name:'oceano', component: Oceano}
 ]
 
 const router = createRouter({

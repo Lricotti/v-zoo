@@ -1,22 +1,36 @@
 <template>
   <div id="main-home">
+
     <div id="selva">
-      <h2>Selva</h2>
-      <img src="../assets/img/selva.jpg" class="selvapic">
+      <router-link to="selva">
+        <h2>Selva</h2>
+        <img src="../assets/img/selva.jpg" class="selvapic">
+      </router-link>
     </div>
+
     <div id="Tundra">
-      <h2>Tundra</h2>
-      <img src="../assets/img/tundra.jpg" class="tundrapic">
+      <router-link to="tundra">
+        <h2>Tundra</h2>
+        <img src="../assets/img/tundra.jpg" class="tundrapic">
+      </router-link>
     </div>
+
     <div id="Desierto">
-      <h2>Desierto</h2>
-      <img src="../assets/img/desierto.jpg" class="desiertopic">
+      <router-link to="desierto">
+        <h2>Desierto</h2>
+        <img src="../assets/img/desierto.jpg" class="desiertopic">
+      </router-link>
     </div>
+
     <div id="Agua">
-      <h2>Oceano</h2>
-      <img src="../assets/img/agua.jpg" class="aguapic">
+      <router-link to="oceano">
+        <h2>Oceano</h2>
+        <img src="../assets/img/agua.jpg" class="aguapic">
+      </router-link>
     </div>
+
   </div>
+
 </template>
 
 <script>
