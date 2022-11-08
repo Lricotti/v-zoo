@@ -8,6 +8,7 @@ import tundra from "@/components/Tundra";
 import selva from "@/components/Selva";
 import Oceano from "@/components/Oceano";
 
+
 const routes = [
   {path: '/', name: 'home', component: HomeView},
   {path: '/registro', name: "registro", component: Registro},
@@ -17,6 +18,7 @@ const routes = [
   {path: '/tundra', name:'tundra', component: tundra},
   {path: '/selva', name:'selva', component: selva},
   {path: '/oceano', name:'oceano', component: Oceano}
+
 ]
 
 const router = createRouter({

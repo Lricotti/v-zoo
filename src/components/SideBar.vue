@@ -3,12 +3,12 @@
   <div id="titulo">
     <h3>Ultimas Noticias!</h3>
     </div>
-    <div v-for="item in data" :key=item.id class="contenedor_articulos" >
-      <a href={{item.link}} class="titulo">{{item.titulo}}</a>
+    <div v-for="(obj, key) in data" :key="key" class="contenedor_articulos" >
+      <a :href="obj.link" class="titulo" data-toggle="modal" target="_blank">{{obj.titulo}}</a>
       <br><br>
-      <img class="product-img" src="{{item.image}}">
-      <p class="medio">Medio: {{item.medio}}</p>
-      <p class="fecha">Fecha: {{item.fecha}}</p>
+      <img class="product-img" :src="obj.image">
+      <p class="medio">Medio: {{obj.medio}}</p>
+      <p class="fecha">Fecha: {{obj.fecha}}</p>
       <br>
 
     </div>
