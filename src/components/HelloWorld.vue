@@ -39,7 +39,7 @@ export default {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  background-color: #90ee85 ;
+  background-color: lightseagreen ;
 }
 #home-container {
   display: flex;

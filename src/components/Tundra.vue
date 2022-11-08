@@ -83,5 +83,9 @@ export default {
 </script>
 
 <style scoped>
+#boxes{
+
+
+}
 
 </style>
