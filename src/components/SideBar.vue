@@ -46,7 +46,7 @@ export default {
   border-radius: 5px;
   text-align: center;
   margin-bottom: 5px;
-  height: 1290px;
+  height: 1390px;
   background-color: #228b22;
 }
 .fecha{
