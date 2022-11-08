@@ -2,7 +2,7 @@
 <div id="subscription-main">
 <Header v-bind:show-button="false"/>
 </div>
-<div class="boxes">
+<div id="boxes">
 <div class="firstbox">
   <img src="../assets/img/osopolar.jpg" class="animal1">
   <h2>{{title1}}</h2>
@@ -83,5 +83,9 @@ export default {
 </script>
 
 <style scoped>
+#boxes{
+padding-top: 100px;
+
+}
 
 </style>

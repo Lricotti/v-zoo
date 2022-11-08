@@ -2,7 +2,7 @@
   <div id="subscription-main">
     <Header v-bind:show-button="false"/>
   </div>
-  <div class="boxes">
+  <div id="boxes">
     <div class="firstbox">
       <img src="../assets/img/coyote.jpg" class="animal1">
       <h2>{{title1}}</h2>
@@ -87,9 +87,10 @@ export default {
 </script>
 
 <style scoped>
-.boxes{
+#boxes{
   display: flex;
   flex-direction: column;
+  padding-top: 100px;
 }
 .firstbox{
   display: inline;
