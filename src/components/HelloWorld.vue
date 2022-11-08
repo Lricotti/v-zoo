@@ -2,14 +2,15 @@
   <div id="homepage">
     <Header/>
 
-    <div id="home-container">
+    <span id="home-container">
+       <h1>Habitats</h1>
       <div id="div-SideBar">
         <SideBar/>
       </div>
       <div id="div-Home">
         <HomeComp/>
       </div>
-    </div>
+    </span>
     <Footer/>
   </div>
 </template>
@@ -45,15 +46,28 @@ export default {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-bottom: -100px;
+
 }
 #div-SideBar {
-  margin-top: 5px;
+  margin-top: -75px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin-left: -10px;
+  margin-bottom: -1px;
 }
+#div-Home{
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  margin-top: 157px;
+}
+
+h1{
+  margin-left: 335px;
+}
+
 
 
 </style>

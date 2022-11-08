@@ -40,14 +40,14 @@ export default {
 #Contenido_SideBar {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   display: inline-block;
-  margin-left: 5px;
+  margin-left: 10px;
   width: 300px;
   border: 5px double rgb(109, 55, 55);
   border-radius: 5px;
   text-align: center;
   margin-bottom: 5px;
-  height: 1389px;
-  background-color: aliceblue;
+  height: 1290px;
+  background-color: #228b22;
 }
 .fecha{
   border-bottom: 1px solid black;

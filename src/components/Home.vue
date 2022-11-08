@@ -1,35 +1,37 @@
 <template>
-  <div id="main-home">
+  <span id="main-home">
+    <span class="derecha">
+      <div id="selva">
+        <router-link to="selva">
+          <h2>Selva</h2>
+          <img src="../assets/img/selva.jpg" class="selvapic">
+        </router-link>
+      </div>
 
-    <div id="selva">
-      <router-link to="selva">
-        <h2>Selva</h2>
-        <img src="../assets/img/selva.jpg" class="selvapic">
-      </router-link>
-    </div>
+      <div id="Tundra">
+        <router-link to="tundra">
+          <h2>Tundra</h2>
+          <img src="../assets/img/tundra.jpg" class="tundrapic">
+        </router-link>
+      </div>
+      </span>
+    <span class="izquierda">
+      <div id="Desierto">
+        <router-link to="desierto">
+          <h2>Desierto</h2>
+          <img src="../assets/img/desierto.jpg" class="desiertopic">
+        </router-link>
+      </div>
 
-    <div id="Tundra">
-      <router-link to="tundra">
-        <h2>Tundra</h2>
-        <img src="../assets/img/tundra.jpg" class="tundrapic">
-      </router-link>
-    </div>
+      <div id="Agua">
+        <router-link to="oceano">
+          <h2>Oceano</h2>
+          <img src="../assets/img/agua.jpg" class="aguapic">
+        </router-link>
+      </div>
+      </span>
 
-    <div id="Desierto">
-      <router-link to="desierto">
-        <h2>Desierto</h2>
-        <img src="../assets/img/desierto.jpg" class="desiertopic">
-      </router-link>
-    </div>
-
-    <div id="Agua">
-      <router-link to="oceano">
-        <h2>Oceano</h2>
-        <img src="../assets/img/agua.jpg" class="aguapic">
-      </router-link>
-    </div>
-
-  </div>
+  </span>
 
 </template>
 
@@ -44,11 +46,17 @@ export default {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: right;
   align-items: center;
-  margin-top: 30px;
+  margin-top: -1300px;
 }
 
+.derecha{
+  margin-right: 340px;
+}
+.izquierda{
+  margin-right: 40px;
+}
 
 .selvapic{
   width: 300px;
@@ -76,32 +84,14 @@ export default {
   margin-right: 40px;
 }
 
-.main-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#selva{
+margin-bottom: 200px;
 }
-.home-img {
-  max-width: 350px;
-  margin: 0 30px 0 30px;
+#Desierto{
+  margin-bottom: 200px;
 }
-.phrases {
-  margin-top: 30px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 20px;
-}
-.button-box {
-  text-align: center;
-  color: white;
-  background-color: #00bab3;
-  width: 350px;
-  padding: 20px 0 20px 0;
-  font-weight: bold;
-  font-size: 22px;
-  margin-bottom: 40px;
-  cursor: pointer;
-}
+
+
 .home-img:hover {
   opacity: 0.7;
 }

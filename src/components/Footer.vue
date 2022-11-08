@@ -30,6 +30,7 @@ export default {
   display: inline;
   background-color: black;
   box-shadow: 0 0 15px darkgrey;
+  height: 150px;
 }
 #footer-text {
   font-style: italic;
