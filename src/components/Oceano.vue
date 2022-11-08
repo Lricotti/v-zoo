@@ -2,7 +2,7 @@
   <div id="subscription-main">
     <Header v-bind:show-button="false"/>
   </div>
-  <div class="boxes">
+  <div id="boxes">
     <div class="firstbox">
       <img src="../assets/img/tiburon.jpg" class="animal1">
       <h2>{{title1}}</h2>
@@ -28,7 +28,7 @@
     </div>
 
       <div class="thirdbox">
-        <img src="../assets/img/medusa.jpg" class="animal3">
+        <img src="../assets/img/medusa.jpg" id="animal3">
         <h2>{{title3}}</h2>
         <h4>Habitat:{{habitat3}}</h4>
         <h4>Nombre cientifico:{{nombrecientifico3}}</h4>
@@ -80,5 +80,11 @@ export default {
 </script>
 
 <style scoped>
+#boxes{
+  padding-top: 100px;
+}
 
+#animal3{
+  max-width: 180px;
+}
 </style>
