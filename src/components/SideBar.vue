@@ -7,8 +7,8 @@
       <a href={{item.link}} class="titulo">{{item.titulo}}</a>
       <br><br>
       <img class="product-img" src="{{item.image}}">
-      <p class="medio">{{item.medio}}</p>
-      <p class="fecha">{{item.fecha}}</p>
+      <p class="medio">Medio: {{item.medio}}</p>
+      <p class="fecha">Fecha: {{item.fecha}}</p>
       <br>
 
     </div>
@@ -57,5 +57,14 @@ export default {
 .product-img{
   width: 150px;
   height: 150px;
+}
+.contenedor_articulos{
+  color: black;
+}
+.titulo{
+  color: black;
+}
+a:link{
+  text-decoration: none;
 }
 </style>
