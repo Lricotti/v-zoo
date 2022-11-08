@@ -23,7 +23,7 @@
 
     <div class="Derecha_del_Header">
         <div style="width: 145px">
-          <router-link to="Registro">
+          <router-link style="text-decoration: none;color:inherit" to="Registro">
             <div id="menu-container" v-if="showButton">
              {{ Boton }}
             </div>
