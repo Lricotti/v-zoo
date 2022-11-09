@@ -95,8 +95,14 @@ export default {
 .firstbox{
   display: inline;
 
+
 }
 .secondbox{
   display: inline;
-}
+
+.thirdbox {
+  display: inline;
+
+
+
 </style>
