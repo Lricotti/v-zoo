@@ -32,4 +32,8 @@ export default {
 #server-error-container {
   margin-top: 20px;
 }
+img{
+  height: 500px;
+  width: 500px
+}
 </style>

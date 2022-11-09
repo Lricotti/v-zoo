@@ -52,7 +52,7 @@ export default {
   },
   methods: {
     registrate() {
-      axios.post("http://localhost:5000/api/v1/users", {
+      axios.post("http://localhost:3000/api/v1/users", {
         firstName: this.firstName,
         lastName: this.lastName,
         email: this.email,
