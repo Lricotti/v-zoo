@@ -266,6 +266,7 @@ export default {
 #Datos li{
   color: black;
   font-weight: bold;
+  text-align: left;
 }
 
 #botones{
