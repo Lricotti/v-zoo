@@ -93,7 +93,7 @@ export default {
   font-size: 18px;
   font-weight: 400;
   text-align: center;
-  background: #c7a17a;
+  background: #3999FF;
   margin: 0 0 25px;
   overflow: hidden;
   padding: 20px;
@@ -101,6 +101,8 @@ export default {
   -moz-border-radius: 35px 0px 35px 0px;
   -webkit-border-radius: 35px 0px 35px 0px;
   border: 2px solid black;
+
+
 }
 .secondbox{
   display: inline;
@@ -109,7 +111,7 @@ export default {
   font-size: 18px;
   font-weight: 400;
   text-align: center;
-  background: #c7a17a;
+  background: #3999FF;
   margin: 0 0 25px;
   overflow: hidden;
   padding: 20px;
@@ -125,7 +127,7 @@ export default {
   font-size: 18px;
   font-weight: 400;
   text-align: center;
-  background: #c7a17a;
+  background: #3999FF;
   margin: 0 0 25px;
   overflow: hidden;
   padding: 20px;

@@ -93,7 +93,7 @@ export default {
   font-size: 18px;
   font-weight: 400;
   text-align: center;
-  background: #c7a17a;
+  background: #008000;
   margin: 0 0 25px;
   overflow: hidden;
   padding: 20px;
@@ -112,7 +112,7 @@ export default {
   font-size: 18px;
   font-weight: 400;
   text-align: center;
-  background: #c7a17a;
+  background: #008000;
   margin: 0 0 25px;
   overflow: hidden;
   padding: 20px;
@@ -131,7 +131,7 @@ export default {
   font-size: 18px;
   font-weight: 400;
   text-align: center;
-  background: #c7a17a;
+  background: #008000;
   margin: 0 0 25px;
   overflow: hidden;
   padding: 20px;
