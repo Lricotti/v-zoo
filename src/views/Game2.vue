@@ -7,21 +7,14 @@
     <router-link to="/game">|Game</router-link>
   </nav>
   </div>
-  <div style="width: 100vw;
-  height: 200vh;
-  background: linear-gradient(aliceblue, white);
-  padding-top: 10px; border: 3px solid black">
+  <div style="border: 3px solid black; height: max-content;background: radial-gradient(lightslategrey,lightcyan)">
 
 
     <h2 id="Titulo"> Juego interactivo con tu animal favorito</h2>
-    <h4 v-if="animal==0">Seleccione el animal con el que desea continuar....</h4>
-    <input v-else class="animal-button" type="button" value="Cambiar de animal" v-on:click="animal=0">
-    <br>
-    <br>
+    <h4 v-if="animal==0" style="font-family: fantasy;">Seleccione el animal con el que desea continuar....</h4>
+    <input v-else id="animal-button" type="button" value="Cambiar de animal" v-on:click="animal=0">
     <div id="fotos">
-      <h3 v-if="animal>0"> ¡ {{ nombre }} !</h3>
-
-
+      <h3 id="que_animal" v-if="animal>0"> ¡ {{ nombre }} !</h3>
       <img v-if="animal==1 || animal==0" @click="show_1" src="../assets/img/tiburon.jpg" id="animal_1" width="310" height="163">
       <img v-if="animal==2 || animal==0" @click="show_2" src="../assets/img/leon.jpg" id="animal_2" width="310" height="163">
       <img v-if="animal==3 || animal==0" @click="show_3" src="../assets/img/pinguino.jpg" id="animal_4" width="310" height="163">
@@ -32,7 +25,7 @@
     <div v-if="animal>0" id="botones">
 
       <div>
-        <input class="punch-button" type="button" value="🥊" v-on:click="punch()">
+        <input class="punch-button" type="button" value="🥊" v-on:click="punch">
        <div id="vida">
           <p>Vida del {{ nombre }}</p> <div v-bind:style="{width: vida + '%' }"></div>
        </div>
@@ -44,6 +37,8 @@
         </div>
       </div>
       <input v-if="animal>0" class="restart-button" type="button" style="color: green" value="Restart values" v-on:click="restart()">
+      <p>Puntaje: {{puntaje}}</p>
+      <input v-if="variable==0" class="dice-button" type="button" style="color: green" value="Roll dice" v-on:click="dice()">
       <div>
         <input class="dormir-button" type="button" value="💤" v-on:click="sleep()">
         <div id="energia">
@@ -59,7 +54,7 @@
     </div>
 
     <div>
-      <h3 v-if="animal!=0" style="text-decoration: underline">5 Datos Curiosos del {{nombre}} que probablemente no conocias...!</h3>
+      <h3 v-if="animal!=0" style="text-decoration: underline; color: black;">5 Datos Curiosos del {{nombre}} que probablemente no conocias...!</h3>
       <ul v-if="animal==1" id="Datos">
           <li>No tienen huesos</li>
               Sus esqueletos están hechos de cartílagos, esto los hace más ligeros y les da flexibilidad, lo que les permite moverse con facilidad y ser veloces.
@@ -119,6 +114,8 @@
 <script>
 import Footer from "../components/Footer";
 
+
+
 export default {
   name: "Game2",
   components: {
@@ -131,11 +128,33 @@ export default {
       hambre: 100,
       felicidad:100,
       energia: 100,
-      amor: 100,
       nombre: [],
+      puntaje: 0,
+      variable: 0,
     }
   },
   methods:{
+    dice: function () {
+      if(Math.ceil(Math.random()*6) == 1){
+        this.puntaje += 1, this.vida -= 5, this.hambre -=5
+      }
+      else if(Math.ceil(Math.random()*6) == 2){
+        this.puntaje += 2, this.vida -= 10
+      }
+      else if(Math.ceil(Math.random()*6) == 3){
+        this.puntaje += 3, this.energia -= 5, this.felicidad -=10
+      }
+      else if(Math.ceil(Math.random()*6) == 4){
+        this.puntaje += 4, this.hambre -= 15
+      }
+      else if(Math.ceil(Math.random()*6) == 5){
+        this.puntaje += 5, this.energia -= 10, this.hambre -=5
+      }
+      if(Math.ceil(Math.random()*6) == 6){
+        this.puntaje += 6}
+    },
+    
+    
     punch: function() {
       if(this.vida > 21)
       {this.vida -= 20}
@@ -171,8 +190,8 @@ export default {
       }
     },
     play: function() {
-      if(this.felicidad<= 60){
-        this.felicidad += 40}
+      if(this.felicidad<= 92){
+        this.felicidad +=8}
       if(this.hambre>16){
         this.hambre -= 15}
       if(this.energia >31){
@@ -185,6 +204,7 @@ export default {
       this.energia = 100
       this.hambre = 100
       this.felicidad = 100
+      this.puntaje = 0
     },
     show_1() {
       this.animal = 1
@@ -214,6 +234,7 @@ export default {
   padding-right: 50px;
 }
 #vida{
+  background: ghostwhite;
   width: 200px;
   border: 2px solid #000;
   margin: 0 auto 20px auto;
@@ -224,6 +245,7 @@ export default {
 }
 
 #hambre{
+  background: ghostwhite;
   width: 200px;
   border: 2px solid #000;
   margin: 0 auto 20px auto;
@@ -234,6 +256,7 @@ export default {
 }
 
 #energia{
+  background: ghostwhite;
   width: 200px;
   border: 2px solid #000;
   margin: 0 auto 20px auto;
@@ -243,6 +266,7 @@ export default {
   background: yellow;
 }
 #felicidad{
+  background: ghostwhite;
   width: 200px;
   border: 2px solid #000;
   margin: 0 auto 20px auto;
@@ -254,6 +278,9 @@ export default {
 
 #Titulo{
   color: black;
+  font-weight: 900;
+  font-family: fantasy;
+  font-size: xx-large;
 }
 #Datos{
   list-style-type: decimal;
@@ -286,5 +313,18 @@ export default {
   justify-content: space-evenly;
   border-radius: 10px;
   margin: 10px;
+}
+
+#animal-button{
+  color: black;
+  font-family: "Noto Sans Imperial Aramaic";
+  background: antiquewhite;
+  width: 300px;
+}
+
+#que_animal{
+  font-weight: 900;
+  font-family: "Lao MN";
+  font-size: xx-large;
 }
 </style>
