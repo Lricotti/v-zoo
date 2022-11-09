@@ -94,13 +94,15 @@ export default {
   font-weight: 400;
   text-align: center;
   background: #3999FF;
-  margin: 0 0 25px;
   overflow: hidden;
   padding: 20px;
-  border-radius: 35px 0px 35px 0px;
-  -moz-border-radius: 35px 0px 35px 0px;
-  -webkit-border-radius: 35px 0px 35px 0px;
+  border-radius: 35px 35px 35px 35px;
+  -moz-border-radius: 35px 35px 35px 35px;
+  -webkit-border-radius: 35px 35px 35px 35px;
   border: 2px solid black;
+  max-width: 600px;
+  margin-left: 30%;
+  margin-bottom: 5%;
 
 
 }
@@ -112,13 +114,15 @@ export default {
   font-weight: 400;
   text-align: center;
   background: #3999FF;
-  margin: 0 0 25px;
   overflow: hidden;
   padding: 20px;
-  border-radius: 35px 0px 35px 0px;
-  -moz-border-radius: 35px 0px 35px 0px;
-  -webkit-border-radius: 35px 0px 35px 0px;
+  border-radius: 35px 35px 35px 35px;
+  -moz-border-radius: 35px 35px 35px 35px;
+  -webkit-border-radius: 35px 35px 35px 35px;
   border: 2px solid black;
+  max-width: 600px;
+  margin-left: 30%;
+  margin-bottom: 5%;
 }
 .thirdbox{
   display: inline;
@@ -128,13 +132,13 @@ export default {
   font-weight: 400;
   text-align: center;
   background: #3999FF;
-  margin: 0 0 25px;
   overflow: hidden;
   padding: 20px;
-  border-radius: 35px 0px 35px 0px;
-  -moz-border-radius: 35px 0px 35px 0px;
-  -webkit-border-radius: 35px 0px 35px 0px;
-  border: 2px solid black;
+  border-radius: 35px 35px 35px 35px;
+  -moz-border-radius: 35px 35px 35px 35px;
+  -webkit-border-radius: 35px 35px 35px 35px;
+  border: 2px solid black; max-width: 600px;
+  margin-left: 30%;
 }
 .animal1{
   height: 200px;
