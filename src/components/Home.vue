@@ -66,8 +66,7 @@ export default {
   margin-right: 20px;
   box-shadow: 7px 10px 15px black;
 
-  margin-left: 40px;
-  margin-right: 40px;
+
 
 
 }
