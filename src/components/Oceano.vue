@@ -1,6 +1,6 @@
 <template>
   <div id="subscription-main">
-    <Header v-bind:show-button="false"/>
+    <Header v-bind:show-button="false" style="background: #4895E7"/>
   </div>
   <div id="boxes">
     <div class="firstbox">

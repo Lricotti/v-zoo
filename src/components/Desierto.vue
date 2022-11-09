@@ -1,6 +1,6 @@
 <template>
   <div id="subscription-main">
-    <Header v-bind:show-button="false"/>
+    <Header v-bind:show-button="false" style="background: #E6B98D"/>
   </div>
   <div id="boxes">
     <div class="firstbox">
@@ -87,11 +87,11 @@ export default {
 </script>
 
 <style scoped>
-#boxes {
-  display: flex;
-  flex-direction: column;
+#boxes{
   padding-top: 100px;
   background: url("../assets/img/desiertofondo.jpeg");
+}
+.firstbox {
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   color: #ffffff;
   font-size: 18px;
@@ -111,7 +111,6 @@ export default {
   border: 5px solid black;
 }
 .secondbox{
-  display: inline;
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   color: #ffffff;
   font-size: 18px;
@@ -124,7 +123,7 @@ export default {
   border-radius: 35px 0px 35px 0px;
   -moz-border-radius: 35px 0px 35px 0px;
   -webkit-border-radius: 35px 0px 35px 0px;
-  border: 2px solid #5878ca;
+  border: 2px solid black;
 }
 .animal2{
   height: 250px;
@@ -143,7 +142,7 @@ export default {
   border-radius: 35px 0px 35px 0px;
   -moz-border-radius: 35px 0px 35px 0px;
   -webkit-border-radius: 35px 0px 35px 0px;
-  border: 2px solid #5878ca;
+  border: 2px solid black;
 }
 .animal33{
   height: 200px;

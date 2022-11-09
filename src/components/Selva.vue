@@ -1,6 +1,6 @@
 <template>
   <div id="subscription-main">
-    <Header v-bind:show-button="false"/>
+    <Header v-bind:show-button="false" style="background: #05E71E"/>
   </div>
   <div id="boxes">
     <div class="firstbox">
@@ -144,4 +144,5 @@ export default {
   height: 220px;
   border: 5px solid black;
 }
+
 </style>
