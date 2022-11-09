@@ -23,7 +23,7 @@
       <h4>Vida promedio:{{vidapromedio2}}</h4>
       <h4>Dieta:{{dieta2}}</h4>
       <audio controls>
-        <source src="" type="audio/mp3">
+        <source src="../assets/audios/pulpo.mp3" type="audio/mp3">
       </audio>
     </div>
 
@@ -35,7 +35,7 @@
         <h4>Vida promedio:{{vidapromedio3}}</h4>
         <h4>Dieta:{{dieta3}}</h4>
         <audio controls>
-          <source src="" type="audio/mp3">
+          <source src="../assets/audios/sonido-de-la-medusa-vision-en-3d_RXVX3Qc7.mp3" type="audio/mp3">
         </audio>
       </div>
   </div>

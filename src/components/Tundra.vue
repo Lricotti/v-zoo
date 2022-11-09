@@ -11,7 +11,7 @@
   <h4>Dieta:{{dieta1}}</h4>
   <h4>Vida promedio:{{vidapromedio1}}</h4>
   <audio controls>
-    <source src="" type="audio/mp3">
+    <source src="../assets/audios/sonidorugido-del-oso_Mt96tjdZ.mp3" type="audio/mp3">
   </audio>
 
 </div>
@@ -23,7 +23,7 @@
   <h4>Dieta:{{dieta2}}</h4>
   <h4>Vida promedio:{{vidapromedio2}}</h4>
   <audio controls>
-    <source src="" type="audio/mp3">
+    <source src="../assets/audios/sonido-de-pinguinos_vaheUaau.mp3" type="audio/mp3">
   </audio>
 
 </div>
@@ -35,7 +35,7 @@
     <h4>Dieta:{{dieta3}}</h4>
     <h4>Vida promedio:{{vidapromedio3}}</h4>
     <audio controls>
-      <source src="" type="audio/mp3">
+      <source src="../assets/audios/sonido-de-reno_ZeR0lcU0.mp3" type="audio/mp3">
     </audio>
 
   </div>

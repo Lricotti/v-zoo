@@ -11,7 +11,7 @@
       <h4>Nombre cientifico:{{nombrecientifico1}}</h4>
       <h4>Dieta:{{dieta1}}</h4>
       <audio controls>
-        <source src="" type="audio/mp3">
+        <source src="../assets/audios/aullidos-de-coyote_WLBMXcFZ.mp3" type="audio/mp3">
       </audio>
 
     </div>
@@ -26,7 +26,7 @@
 
 
       <audio controls>
-        <source src="" type="audio/mp3">
+        <source src="../assets/audios/camello.mp3" type="audio/mp3">
       </audio>
 
     </div>
@@ -41,7 +41,7 @@
 
 
       <audio controls>
-        <source src="" type="audio/mp3">
+        <source src="../assets/audios/zorrofenec.mp3" type="audio/mp3">
       </audio>
 
     </div>
