@@ -85,11 +85,7 @@ export default {
       else if(alert("Esta muy triste, porque no juegan un rato?"))
       if(this.hambre>11){
         this.hambre -= 10}
-      else if(alert("Necesita comer"))
-      if(this.energia>11){
-        this.energia -= 10}
-      else(alert("Esta muy cansado, vamos a dormir una siesta"))
-
+      else (alert("Necesita comer"))
     },
 
     eat: function() {
@@ -99,6 +95,8 @@ export default {
         this.felicidad += 10}
       if(this.hambre<=75){
         this.hambre += 25}
+      if(this.energia<=90){
+        this.energia += 10}
     },
 
     sleep: function() {
