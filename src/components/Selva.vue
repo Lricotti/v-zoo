@@ -28,7 +28,7 @@
     </div>
 
       <div class="thirdbox">
-        <img src="../assets/img/mono.jpg" class="animal3">
+        <img src="../assets/img/monojpg.webp" class="animal3">
         <h2>{{title3}}</h2>
         <h4>Habitat:{{habitat3}}</h4>
         <h4>Nombre cientifico:{{nombrecientifico3}}</h4>
@@ -55,19 +55,19 @@ export default {
   },
   data(){
     return{
-      title1:"León",
+      title1:"LEÓN",
       habitat1:" Selva",
       vidapromedio1: " Los machos entre 8-10 años y las hembras entre 15-16 años",
       nombrecientifico1:" Panthera leo",
       dieta1:" Carnívora; principalmente animales de mediano y gran tamaño como ñúes, impalas y otros antílopes, cebras, jirafas, búfalos y también carroña",
 
-      title2:"Jaguar",
+      title2:"JAGUAR",
       habitat2:" Selva",
       vidapromedio2: " 12–15 años",
       nombrecientifico2:" Panthera onca",
       dieta2:" Cazan peces, tortugas e incluso caimanes, tambien se alimentan de venados, pecaríes, capibaras, tapires y otros animales terrestres, y para capturarlos, prefieren emboscarse por la noche",
 
-      title3:"Mono",
+      title3:"MONO",
       habitat3:" Selva",
       vidapromedio3: " 15-20 años",
       nombrecientifico3:" Platyrrhini",
@@ -83,5 +83,62 @@ export default {
 <style scoped>
 #boxes{
   padding-top: 100px;
+}
+.firstbox{
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  background: #c7a17a;
+  margin: 0 0 25px;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 35px 0px 35px 0px;
+  -moz-border-radius: 35px 0px 35px 0px;
+  -webkit-border-radius: 35px 0px 35px 0px;
+  border: 2px solid black;
+}
+.animal1{
+  height: 200px;
+  border: 5px solid black;
+}
+.secondbox{
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  background: #c7a17a;
+  margin: 0 0 25px;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 35px 0px 35px 0px;
+  -moz-border-radius: 35px 0px 35px 0px;
+  -webkit-border-radius: 35px 0px 35px 0px;
+  border: 2px solid black;
+}
+.animal2{
+  height: 230px;
+  border: 5px solid black;
+}
+.thirdbox{
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  background: #c7a17a;
+  margin: 0 0 25px;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 35px 0px 35px 0px;
+  -moz-border-radius: 35px 0px 35px 0px;
+  -webkit-border-radius: 35px 0px 35px 0px;
+  border: 2px solid black;
+}
+.animal3{
+  height: 220px;
+  border: 5px solid black;
 }
 </style>

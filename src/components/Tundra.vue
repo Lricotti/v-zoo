@@ -55,27 +55,24 @@ export default {
   },
   data(){
     return{
-      title1:"Oso polar",
+      title1:"OSO POLAR",
       habitat1:"Tundra",
       vidapromedio1: " Entre 20 y 25 años",
       nombrecientifico1:"Ursus maritimus",
       dieta1:" Es el miembro más carnívoro de la familia de los osos, se alimenta principalmente de una dieta compuesta por focas anilladas ya que necesita grandes cantidades de grasa para sobrevivir",
 
-      title2:" Pingüino",
+      title2:" PINGÜINO",
       habitat2:" Tundra",
       vidapromedio2: " Entre 15 a 20 años",
       nombrecientifico2:" Spheniscidae",
       dieta2:" Consume peces, crustáceos eufásidos(krill) y cefalópodos (calamares)",
 
-      title3:"Caribú",
+      title3:"CARIBÚ",
       habitat3:" Tundra",
       vidapromedio3:" Entre 12 a 15 años",
       nombrecientifico3:" Rangifer tarandus",
       dieta3:" Comen, hojas de sauce y abedul enano, y líquenes (los \"líquenes de los renos\" cetraria y cladonia) en invierno; aunque también comen juncias y hierbas. incluso ingieren plantas venenosas, como ranúnculos de los glaciares.",
-
-
-
-
+      
     }
 
   }
@@ -85,7 +82,71 @@ export default {
 <style scoped>
 #boxes{
 padding-top: 100px;
-
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+.firstbox{
+  display: inline;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  background: #c7a17a;
+  margin: 0 0 25px;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 35px 0px 35px 0px;
+  -moz-border-radius: 35px 0px 35px 0px;
+  -webkit-border-radius: 35px 0px 35px 0px;
+  border: 2px solid black;
 }
 
+.secondbox{
+  display: inline;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  background: #c7a17a;
+  margin: 0 0 25px;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 35px 0px 35px 0px;
+  -moz-border-radius: 35px 0px 35px 0px;
+  -webkit-border-radius: 35px 0px 35px 0px;
+  border: 2px solid black;
+}
+
+.thirdbox{
+  display: inline;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  background: #c7a17a;
+  margin: 0 0 25px;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 35px 0px 35px 0px;
+  -moz-border-radius: 35px 0px 35px 0px;
+  -webkit-border-radius: 35px 0px 35px 0px;
+  border: 2px solid black;
+}
+
+.animal1{
+  height: 200px;
+  border: 5px solid black;
+}
+.animal2{
+  height: 180px;
+  border: 5px solid black;
+}
+.animal3{
+  height: 200px;
+  border: 5px solid black;
+}
 </style>

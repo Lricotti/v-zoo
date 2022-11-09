@@ -54,19 +54,19 @@ export default {
   },
   data(){
     return{
-      title1:"Tiburon",
+      title1:"TIBURON",
       habitat1:" Océano",
       vidapromedio1: " 20-30 años",
       nombrecientifico1:" Selachimorpha",
       dieta1:" Comen pescado o invertebrados, como calamares o almejas",
 
-      title2:" Pulpo",
+      title2:" PULPO",
       habitat2:" Océano",
       vidapromedio2: " 3-5 años",
       nombrecientifico2:"Octopoda",
       dieta2:" Se alimenta de crustáceos, otros moluscos y peces, por lo tanto, son carnívoros.",
 
-      title3:"Medusa",
+      title3:"MEDUSA",
       habitat3:" Océano",
       vidapromedio3:" Entre 6 meses-2 años",
       nombrecientifico3:" Medusozoa",
@@ -81,10 +81,70 @@ export default {
 
 <style scoped>
 #boxes{
+  display: flex;
+  flex-direction: column;
   padding-top: 100px;
+}
+.firstbox{
+  display: inline;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  background: #c7a17a;
+  margin: 0 0 25px;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 35px 0px 35px 0px;
+  -moz-border-radius: 35px 0px 35px 0px;
+  -webkit-border-radius: 35px 0px 35px 0px;
+  border: 2px solid black;
+}
+.secondbox{
+  display: inline;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  background: #c7a17a;
+  margin: 0 0 25px;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 35px 0px 35px 0px;
+  -moz-border-radius: 35px 0px 35px 0px;
+  -webkit-border-radius: 35px 0px 35px 0px;
+  border: 2px solid black;
+}
+.thirdbox{
+  display: inline;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  background: #c7a17a;
+  margin: 0 0 25px;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 35px 0px 35px 0px;
+  -moz-border-radius: 35px 0px 35px 0px;
+  -webkit-border-radius: 35px 0px 35px 0px;
+  border: 2px solid black;
+}
+.animal1{
+  height: 200px;
+  border: 5px solid black;
+}
+.animal2{
+  height: 250px;
+  border: 5px solid black;
 }
 
 #animal3{
-  max-width: 180px;
+  height: 250px;
+  border: 5px solid black;
+
 }
 </style>
