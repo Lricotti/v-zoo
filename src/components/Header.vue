@@ -69,7 +69,7 @@ export default {
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
-  height: 230px;
+  height: 270px;
 }
 #Izq{
   margin-left: -165px;
@@ -89,6 +89,7 @@ img {
   font-size: 25px;
   padding-right: 250px;
   padding-bottom: 80px;
+  margin-bottom: -50px;
 }
 
 
@@ -98,11 +99,12 @@ img {
   font-style: italic;
   font-size: 700%;
   padding-right: 250px;
-  padding-bottom: -100px;
+  margin-top: 10px;
 }
 
 #Eslogan_Negativo{
-  margin-top: -140px;
+  margin-top: -10px;
+  margin-bottom: 25px;
 }
 
 #Eslogan {
@@ -110,7 +112,7 @@ img {
   font-size: 20px;
   padding-right: 250px;
   margin-top: -50px;
-  margin-bottom: -25px;
+  margin-bottom: -1px;
 }
 
 #menu-container {
