@@ -7,7 +7,7 @@
       <h2>{{ title }}</h2>
       <span>{{ subtitle }}</span>
 
-      <form id="subscription-form" method="post" @submit="subscribe()">
+      <form id="subscription-form" method="post" @submit.prevent="registrate()">
         <label>Nombre<span class="required-field">*</span></label>
         <input type="text" v-model="firstName" required>
 
@@ -33,6 +33,7 @@
 <script>
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import axios from "axios"
 
 export default {
   name: "RegistroComp",
@@ -50,10 +51,26 @@ export default {
     }
   },
   methods: {
-    subscribe() {
-      this.$router.push({name: "registroexito", query: {clientName: this.firstName}})
+    registrate() {
+      axios.post("http://localhost:5000/api/v1/users", {
+        firstName: this.firstName,
+        lastName: this.lastName,
+        email: this.email,
+      })
+          .then(response => {
+            console.log(response)
+            this.$router.push({
+              name: "registroexito",
+              query: {clientName: this.firstName},
+              params: {user_id: response.data["user_id"]}
+            })
+          })
+          .catch(error => {
+            console.log(error);
+            this.$router.push({name: "AlgoSalioMal"})
+          })
     }
-  }
+  },
 }
 </script>
 

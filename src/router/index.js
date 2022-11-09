@@ -9,6 +9,7 @@ import selva from "@/components/Selva";
 import Oceano from "@/components/Oceano";
 import RegistoExitoso from "@/components/RegistoExitoso";
 import paginaNoEncontrada from "@/components/PaginaNoEncontrada";
+import Algosaliomal from "@/components/Algosaliomal";
 
 
 const routes = [
@@ -21,6 +22,7 @@ const routes = [
   {path: '/tundra', name:'tundra', component: tundra},
   {path: '/selva', name:'selva', component: selva},
   {path: '/oceano', name:'oceano', component: Oceano},
+  {path: '/registro/error', name: "AlgoSalioMal", component: Algosaliomal},
 
   {path: '/:pathMatch(.*)*', component: paginaNoEncontrada}
 
