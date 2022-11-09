@@ -1,6 +1,6 @@
 <template>
   <div id="subscription-main">
-    <Header v-bind:show-button="false"/>
+    <Header v-bind:show-button="false" style="background: #05E71E"/>
   </div>
   <div id="boxes">
     <div class="firstbox">
@@ -93,7 +93,7 @@ export default {
   font-size: 18px;
   font-weight: 400;
   text-align: center;
-  background: #c7a17a;
+  background: #008000;
   margin: 0 0 25px;
   overflow: hidden;
   padding: 20px;
@@ -112,7 +112,7 @@ export default {
   font-size: 18px;
   font-weight: 400;
   text-align: center;
-  background: #c7a17a;
+  background: #008000;
   margin: 0 0 25px;
   overflow: hidden;
   padding: 20px;
@@ -131,7 +131,7 @@ export default {
   font-size: 18px;
   font-weight: 400;
   text-align: center;
-  background: #c7a17a;
+  background: #008000;
   margin: 0 0 25px;
   overflow: hidden;
   padding: 20px;
@@ -144,4 +144,5 @@ export default {
   height: 220px;
   border: 5px solid black;
 }
+
 </style>

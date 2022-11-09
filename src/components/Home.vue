@@ -53,7 +53,7 @@ export default {
 }
 
 .derecha{
-  margin-right: 200px;
+  margin-right: 340px;
 }
 .izquierda{
   margin-right: 40px;
@@ -65,6 +65,10 @@ export default {
   margin-left: 20px;
   margin-right: 20px;
   box-shadow: 7px 10px 15px black;
+
+  margin-left: 40px;
+  margin-right: 40px;
+
 
 }
 . p{
@@ -78,9 +82,13 @@ export default {
 .aguapic{
   width: 300px;
   height: 300px;
+
   margin-left: 20px;
   margin-right: 20px;
   box-shadow: 7px 10px 15px black;
+
+
+
 }
 .desiertopic{
   width: 300px;
@@ -88,13 +96,20 @@ export default {
   margin-left: 20px;
   margin-right: 20px;
   box-shadow: 7px 10px 15px black;
+
+
+
 }
 .tundrapic{
   width: 300px;
   height: 300px;
+
   margin-left: 20px;
   margin-right: 20px;
   box-shadow: 7px 10px 15px black;
+
+  
+
 }
 .selvapic:hover{
   opacity: 0.6;
@@ -132,8 +147,6 @@ h2{
   margin-top: 50%;
   font-size: 40px;
   font-family: "Roboto Light";
-
-
 
 }
 
