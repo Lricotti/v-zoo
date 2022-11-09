@@ -83,6 +83,9 @@ export default {
 <style scoped>
 #boxes{
   padding-top: 100px;
+  background: url("../assets/img/selvafondo.jpeg");
+
+
 }
 .firstbox{
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;

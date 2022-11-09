@@ -72,7 +72,7 @@ export default {
       vidapromedio3:" Entre 12 a 15 años",
       nombrecientifico3:" Rangifer tarandus",
       dieta3:" Comen, hojas de sauce y abedul enano, y líquenes (los \"líquenes de los renos\" cetraria y cladonia) en invierno; aunque también comen juncias y hierbas. incluso ingieren plantas venenosas, como ranúnculos de los glaciares.",
-      
+
     }
 
   }
@@ -85,6 +85,7 @@ padding-top: 100px;
   display: flex;
   flex-direction: column;
   padding-top: 100px;
+  background: url("../assets/img/tundrafondo.jpeg");
 }
 .firstbox{
   display: inline;

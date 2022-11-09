@@ -91,6 +91,7 @@ export default {
   display: flex;
   flex-direction: column;
   padding-top: 100px;
+  background: url("../assets/img/desiertofondo.jpeg");
 }
 .firstbox{
   display: inline;

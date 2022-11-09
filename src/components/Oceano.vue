@@ -84,6 +84,7 @@ export default {
   display: flex;
   flex-direction: column;
   padding-top: 100px;
+  background: url("../assets/img/oceanofondo.jpeg");
 }
 .firstbox{
   display: inline;
