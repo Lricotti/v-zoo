@@ -1,4 +1,12 @@
 <template>
+  <div id="Home_game">
+  <nav>
+        <span class="s">
+          <router-link to="/">Home</router-link>
+        </span>
+    <router-link to="/game">Game</router-link>
+  </nav>
+  </div>
   <h2> Juego interactivo con tu animal favorito</h2>
   <h4 v-if="animal==0">Seleccione su animal favorito para continuar....</h4>
   <input v-else class="animal-button" type="button" value="Cambiar de animal" v-on:click="animal=0">
@@ -63,6 +71,12 @@ export default {
 </script>
 
 <style>
+#Home_game{
+  font-size: 25px;
+}
+.s{
+  padding-right: 50px;
+}
 #health{
   width: 200px;
   border: 2px solid #000;
