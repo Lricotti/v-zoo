@@ -31,6 +31,7 @@ export default {
   background-color: black;
   box-shadow: 0 0 15px darkgrey;
   height: 150px;
+  width: 100%;
 }
 #footer-text {
   font-style: italic;
