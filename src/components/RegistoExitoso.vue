@@ -3,13 +3,17 @@
   <div id="todo">
     <Header v-bind:show-button="false"/>
     <span class="titulo">¡{{ this.$route.query["clientName"] }}!</span>
-    <span class="titulo"> Gracias por el  registro, ya pertences a la comunidad de V-Zoo</span>
+    <span class="titulo"> Gracias por el  registro, ya perteneces a la comunidad de V-Zoo</span>
 
     <div id="imagen-registro">
       <img src="../assets/img/zooo.webp" alt="">
     </div>
+    <br>
+    <br>
 
     <router-link :to="{ name: 'home'}">Volver</router-link>
+    <br>
+    <br>
     <Footer></Footer>
   </div>
 
@@ -35,6 +39,8 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
+  height: 500px;
+  width: 500px;
 }
 #sub-success-img img {
   border-radius: 5px;
