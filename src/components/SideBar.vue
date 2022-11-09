@@ -67,4 +67,8 @@ export default {
 a:link{
   text-decoration: none;
 }
+img {
+  max-width: 420px;
+  border-radius: 50%;
+}
 </style>
