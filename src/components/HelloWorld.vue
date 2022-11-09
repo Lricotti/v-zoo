@@ -56,12 +56,12 @@ export default {
 
 }
 #div-SideBar {
-  margin-top: -117px;
+  margin-top: -6%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin-left: -10px;
-  margin-bottom: -100px;
+  margin-bottom: -168px;
 
 
 }
@@ -74,11 +74,10 @@ export default {
 
 h1 {
 
-  margin-top: auto;
-  margin-left: 310px;
+  margin-top: 1%;
+  margin-left: 25%;
   font-family: "Roboto Light";
   font-size: 400%;
-  background-color: white;
   border-color: black;
   border-bottom: black;
   opacity: 90%;
