@@ -34,6 +34,7 @@ export default {
   flex-direction: column;
   flex-wrap: nowrap;
   height: 98vh;
+
 }
 #imagen-registro {
   display: flex;

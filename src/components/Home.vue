@@ -108,7 +108,7 @@ export default {
   margin-right: 20px;
   box-shadow: 7px 10px 15px black;
 
-  
+
 
 }
 .selvapic:hover{
