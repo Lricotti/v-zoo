@@ -11,7 +11,7 @@
       <h4>Vida promedio:{{vidapromedio1}}</h4>
       <h4>Dieta:{{dieta1}}</h4>
       <audio controls>
-        <source src="" type="audio/mp3">
+        <source src="../assets/audios/Tiburon.mp3" type="audio/mp3">
       </audio>
     </div>
 
@@ -39,7 +39,6 @@
         </audio>
       </div>
   </div>
-  <Footer/>
 </template>
 
 <script>
