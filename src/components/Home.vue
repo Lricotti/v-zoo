@@ -49,10 +49,11 @@ export default {
   justify-content: right;
   align-items: center;
   margin-top: -1300px;
+
 }
 
 .derecha{
-  margin-right: 340px;
+  margin-right: 200px;
 }
 .izquierda{
   margin-right: 40px;
@@ -61,27 +62,27 @@ export default {
 .selvapic{
   width: 300px;
   height: 300px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 
 }
 .aguapic{
   width: 300px;
   height: 300px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .desiertopic{
   width: 300px;
   height: 300px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .tundrapic{
   width: 300px;
   height: 300px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .selvapic:hover{
   opacity: 0.7;
