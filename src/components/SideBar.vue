@@ -48,6 +48,7 @@ export default {
   margin-bottom: 5px;
   height: 1390px;
   background-color: #228b22;
+
 }
 .fecha{
   border-bottom: 1px solid black;

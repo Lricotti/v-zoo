@@ -49,6 +49,7 @@ export default {
   justify-content: right;
   align-items: center;
   margin-top: -1300px;
+
 }
 
 .derecha{
