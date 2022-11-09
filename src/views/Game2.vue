@@ -18,18 +18,18 @@
     <input v-else class="animal-button" type="button" value="Cambiar de animal" v-on:click="animal=0">
     <br>
     <br>
-    <div id="prueba">
+    <div id="fotos">
       <h3 v-if="animal>0"> ¡ {{ nombre }} !</h3>
 
 
-      <img v-if="animal==1 || animal==0" @click="show_1" src="../assets/img/tiburon.jpg" class="animal_1" width="310" height="163">
-      <img v-if="animal==2 || animal==0" @click="show_2" src="../assets/img/leon.jpg" class="animal_2" width="310" height="163">
-      <img v-if="animal==3 || animal==0" @click="show_3" src="../assets/img/pinguino.jpg" class="animal_4" width="310" height="163">
-      <img v-if="animal==4 || animal==0" @click="show_4" src="../assets/img/osopolar.jpg" class="animal_5" width="310" height="163">
+      <img v-if="animal==1 || animal==0" @click="show_1" src="../assets/img/tiburon.jpg" id="animal_1" width="310" height="163">
+      <img v-if="animal==2 || animal==0" @click="show_2" src="../assets/img/leon.jpg" id="animal_2" width="310" height="163">
+      <img v-if="animal==3 || animal==0" @click="show_3" src="../assets/img/pinguino.jpg" id="animal_4" width="310" height="163">
+      <img v-if="animal==4 || animal==0" @click="show_4" src="../assets/img/osopolar.jpg" id="animal_5" width="310" height="163">
     </div>
 
     <br>
-    <div v-if="animal>0" id="Botones">
+    <div v-if="animal>0" id="botones">
 
       <div>
         <input class="punch-button" type="button" value="🥊" v-on:click="punch()">
@@ -114,12 +114,16 @@
       </ul>
     </div>
   </div>
-
 </template>
 
 <script>
+import Footer from "../components/Footer";
+
 export default {
   name: "Game2",
+  components: {
+    Footer
+  },
   data() {
     return {
       animal: 0,
@@ -248,20 +252,8 @@ export default {
   background: coral;
 }
 
-#prueba {
-  justify-content: space-between;
-  align-items: center;
-}
-
 #Titulo{
   color: black;
-}
-
-#0{
-  width: 100vw;
-  height: 100vh;
-  background: radial-gradient(cornflowerblue, white);
-  padding-top: 10px;
 }
 #Datos{
   list-style-type: decimal;
@@ -274,33 +266,24 @@ export default {
 #Datos li{
   color: black;
   font-weight: bold;
-
 }
 
-#2{
-  width: 100vw;
-  height: 100vh;
-  background: radial-gradient(cornflowerblue, white);
-  padding-top: 10px;
-}
-#3{
-  width: 100vw;
-  height: 100vh;
-  background: radial-gradient(cornflowerblue, white);
-  padding-top: 10px;
-}
-#4{
-  width: 100vw;
-  height: 100vh;
-  background: radial-gradient(cornflowerblue, white);
-  padding-top: 10px;
-}
-
-#Botones{
+#botones{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   width: auto;
 }
 
+#fotos {
+  justify-content: space-between;
+  align-items: center;
+}
+
+#fotos img{
+  border: 2px solid black;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  margin: 10px;
+}
 </style>

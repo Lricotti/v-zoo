@@ -23,7 +23,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 #Contenido_footer {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   margin-top: auto;
