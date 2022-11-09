@@ -20,8 +20,5 @@ export default {
 </script>
 
 <style>
-img {
-  max-width: 420px;
-  border-radius: 50%;
-}
+
 </style>

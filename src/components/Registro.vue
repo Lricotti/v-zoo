@@ -18,7 +18,9 @@
         <input id="email-label" type="text" v-model="email" required>
 
         <input type="submit" value="Registrarme">
+
       </form>
+      <router-link :to="{ name: 'home'}">De vuelta al Zoo</router-link>
 
     </div>
 
@@ -49,7 +51,7 @@ export default {
   },
   methods: {
     subscribe() {
-      this.$router.push({name: "SubSuccessRoute", query: {clientName: this.firstName}})
+      this.$router.push({name: "registroexito", query: {clientName: this.firstName}})
     }
   }
 }

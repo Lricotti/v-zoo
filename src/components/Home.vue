@@ -120,5 +120,9 @@ h2{
 .button-box:hover {
   background-color: #3e1c08;
 }
+img {
+  max-width: 420px;
+  border-radius: 50%;
+}
 
 </style>
