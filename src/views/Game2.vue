@@ -1,4 +1,10 @@
 <template>
+  <nav>
+        <span class="s">
+          <router-link to="/">Home</router-link>
+        </span>
+    <router-link to="/game">Game</router-link>
+  </nav>
   <h2> Juego interactivo con tu animal favorito</h2>
   <h4 v-if="animal==0">Seleccione su animal favorito para continuar....</h4>
   <input v-else class="animal-button" type="button" value="Cambiar de animal" v-on:click="animal=0">

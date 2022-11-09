@@ -69,6 +69,7 @@ export default {
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
+  height: 230px;
 }
 #Izq{
   margin-left: -165px;
@@ -87,6 +88,7 @@ img {
 #Home_Game{
   font-size: 25px;
   padding-right: 250px;
+  padding-bottom: 80px;
 }
 
 
@@ -96,10 +98,11 @@ img {
   font-style: italic;
   font-size: 700%;
   padding-right: 250px;
+  padding-bottom: -100px;
 }
 
 #Eslogan_Negativo{
-  margin-top: -3px;
+  margin-top: -140px;
 }
 
 #Eslogan {
