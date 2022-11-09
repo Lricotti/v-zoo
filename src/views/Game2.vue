@@ -8,18 +8,18 @@
   </nav>
   </div>
   <div style="width: 100vw;
-  height: 100vh;
+  height: 200vh;
   background: linear-gradient(aliceblue, white);
   padding-top: 10px; border: 3px solid black">
 
 
     <h2 id="Titulo"> Juego interactivo con tu animal favorito</h2>
-    <h4 v-if="animal==0">Seleccione su animal favorito para continuar....</h4>
+    <h4 v-if="animal==0">Seleccione el animal con el que desea continuar....</h4>
     <input v-else class="animal-button" type="button" value="Cambiar de animal" v-on:click="animal=0">
     <br>
     <br>
     <div id="prueba">
-      <h3 v-if="animal>0"> {{ nombre }}!</h3>
+      <h3 v-if="animal>0"> ¡ {{ nombre }} !</h3>
 
 
       <img v-if="animal==1 || animal==0" @click="show_1" src="../assets/img/tiburon.jpg" class="animal_1" width="310" height="163">
@@ -43,6 +43,7 @@
           <p>Hambre del {{ nombre }}</p> <div v-bind:style="{width: hambre + '%' }"></div>
         </div>
       </div>
+      <input v-if="animal>0" class="restart-button" type="button" style="color: green" value="Restart values" v-on:click="restart()">
       <div>
         <input class="dormir-button" type="button" value="💤" v-on:click="sleep()">
         <div id="energia">
@@ -56,7 +57,58 @@
         </div>
       </div>
     </div>
-    <input v-if="animal>0" class="restart-button" type="button" value="Restart" v-on:click="restart()">
+
+    <div>
+      <h3 v-if="animal!=0" style="text-decoration: underline">5 Datos Curiosos del {{nombre}} que probablemente no conocias...!</h3>
+      <ul v-if="animal==1" id="Tiburon">
+          <li>No tienen huesos</li>
+              Sus esqueletos están hechos de cartílagos, esto los hace más ligeros y les da flexibilidad, lo que les permite moverse con facilidad y ser veloces.
+          <li>Dentadura eterna</li>
+              Mientras que los humanos tenemos en promedio 32 dientes que renovamos una vez en la vida, ellos no paran de renovarlos, ya que carecen de raíces y se rompen con facilidad. Un diente de tiburón tarda alrededor de una semana en caer, el nuevo diente puede aparecer en tan solo un día. Así pueden perder hasta 1000 dientes por año. Para que te hagas una idea, un tiburón tigre puede producir 24,000 dientes durante una década.
+          <li>Un gran rastreador</li>
+              Como buenos cazadores, los tiburones tienen un gran sentido del olfato, pueden oler una simple gota de sangre desde por lo menos 100 metros de distancia, dependiendo del orificio nasal por el que percibe el olor, se dirige hacia la izquierda o derecha.
+          <li>¿Cómo duermen?</li>
+              Los tiburones saben cómo renovar energía y mantener sus reservas, mientras siguen en movimiento. Nunca pueden dejar de nadar, ya que carecen de vejiga natatoria, que permite a los peces flotar; y porque abren las boca mientras nadan para absorber oxígeno por las branquias. Si dejan de nadar, dejan de flotar y respirar. Por ello, para descansar,  alternan periodos de inactividad, en los que solo una parte del cerebro duerme.
+          <li>Los humanos no somos parte del menú</li>
+              Este es un viejo mito nacido en los años 50 y acentuado por la película Tiburón. Los tiburones consumen sobretodo otros peces, moluscos y crustáceos, y las especies más grandes también consumen mamíferos marinos. Otro grupo de tiburones son herbívoros y prefieren solo el plancton.
+      </ul>
+      <ul v-if="animal==2" id="Leon">
+        <li>No tienen huesos</li>
+        Sus esqueletos están hechos de cartílagos, esto los hace más ligeros y les da flexibilidad, lo que les permite moverse con facilidad y ser veloces.
+        <li>Dentadura eterna</li>
+        Mientras que los humanos tenemos en promedio 32 dientes que renovamos una vez en la vida, ellos no paran de renovarlos, ya que carecen de raíces y se rompen con facilidad. Un diente de tiburón tarda alrededor de una semana en caer, el nuevo diente puede aparecer en tan solo un día. Así pueden perder hasta 1000 dientes por año. Para que te hagas una idea, un tiburón tigre puede producir 24,000 dientes durante una década.
+        <li>Un gran rastreador</li>
+        Como buenos cazadores, los tiburones tienen un gran sentido del olfato, pueden oler una simple gota de sangre desde por lo menos 100 metros de distancia, dependiendo del orificio nasal por el que percibe el olor, se dirige hacia la izquierda o derecha.
+        <li>¿Cómo duermen?</li>
+        Los tiburones saben cómo renovar energía y mantener sus reservas, mientras siguen en movimiento. Nunca pueden dejar de nadar, ya que carecen de vejiga natatoria, que permite a los peces flotar; y porque abren las boca mientras nadan para absorber oxígeno por las branquias. Si dejan de nadar, dejan de flotar y respirar. Por ello, para descansar,  alternan periodos de inactividad, en los que solo una parte del cerebro duerme.
+        <li>Los humanos no somos parte del menú</li>
+        Este es un viejo mito nacido en los años 50 y acentuado por la película Tiburón. Los tiburones consumen sobretodo otros peces, moluscos y crustáceos, y las especies más grandes también consumen mamíferos marinos. Otro grupo de tiburones son herbívoros y prefieren solo el plancton.
+      </ul>
+      <ul v-if="animal==3" id="Pinguino">
+        <li>No tienen huesos</li>
+        Sus esqueletos están hechos de cartílagos, esto los hace más ligeros y les da flexibilidad, lo que les permite moverse con facilidad y ser veloces.
+        <li>Dentadura eterna</li>
+        Mientras que los humanos tenemos en promedio 32 dientes que renovamos una vez en la vida, ellos no paran de renovarlos, ya que carecen de raíces y se rompen con facilidad. Un diente de tiburón tarda alrededor de una semana en caer, el nuevo diente puede aparecer en tan solo un día. Así pueden perder hasta 1000 dientes por año. Para que te hagas una idea, un tiburón tigre puede producir 24,000 dientes durante una década.
+        <li>Un gran rastreador</li>
+        Como buenos cazadores, los tiburones tienen un gran sentido del olfato, pueden oler una simple gota de sangre desde por lo menos 100 metros de distancia, dependiendo del orificio nasal por el que percibe el olor, se dirige hacia la izquierda o derecha.
+        <li>¿Cómo duermen?</li>
+        Los tiburones saben cómo renovar energía y mantener sus reservas, mientras siguen en movimiento. Nunca pueden dejar de nadar, ya que carecen de vejiga natatoria, que permite a los peces flotar; y porque abren las boca mientras nadan para absorber oxígeno por las branquias. Si dejan de nadar, dejan de flotar y respirar. Por ello, para descansar,  alternan periodos de inactividad, en los que solo una parte del cerebro duerme.
+        <li>Los humanos no somos parte del menú</li>
+        Este es un viejo mito nacido en los años 50 y acentuado por la película Tiburón. Los tiburones consumen sobretodo otros peces, moluscos y crustáceos, y las especies más grandes también consumen mamíferos marinos. Otro grupo de tiburones son herbívoros y prefieren solo el plancton.
+      </ul>
+      <ul v-if="animal==4" id="Oso Polar">
+        <li>No tienen huesos</li>
+        Sus esqueletos están hechos de cartílagos, esto los hace más ligeros y les da flexibilidad, lo que les permite moverse con facilidad y ser veloces.
+        <li>Dentadura eterna</li>
+        Mientras que los humanos tenemos en promedio 32 dientes que renovamos una vez en la vida, ellos no paran de renovarlos, ya que carecen de raíces y se rompen con facilidad. Un diente de tiburón tarda alrededor de una semana en caer, el nuevo diente puede aparecer en tan solo un día. Así pueden perder hasta 1000 dientes por año. Para que te hagas una idea, un tiburón tigre puede producir 24,000 dientes durante una década.
+        <li>Un gran rastreador</li>
+        Como buenos cazadores, los tiburones tienen un gran sentido del olfato, pueden oler una simple gota de sangre desde por lo menos 100 metros de distancia, dependiendo del orificio nasal por el que percibe el olor, se dirige hacia la izquierda o derecha.
+        <li>¿Cómo duermen?</li>
+        Los tiburones saben cómo renovar energía y mantener sus reservas, mientras siguen en movimiento. Nunca pueden dejar de nadar, ya que carecen de vejiga natatoria, que permite a los peces flotar; y porque abren las boca mientras nadan para absorber oxígeno por las branquias. Si dejan de nadar, dejan de flotar y respirar. Por ello, para descansar,  alternan periodos de inactividad, en los que solo una parte del cerebro duerme.
+        <li>Los humanos no somos parte del menú</li>
+        Este es un viejo mito nacido en los años 50 y acentuado por la película Tiburón. Los tiburones consumen sobretodo otros peces, moluscos y crustáceos, y las especies más grandes también consumen mamíferos marinos. Otro grupo de tiburones son herbívoros y prefieren solo el plancton.
+      </ul>
+    </div>
   </div>
 
 </template>
@@ -208,11 +260,19 @@ export default {
   padding-top: 10px;
 }
 #Tiburon{
-  width: 100vw;
-  height: 100vh;
-  background: radial-gradient(red, white);
-  padding-top: 10px;
+  list-style-type: decimal;
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  margin: 0 auto;
 }
+
+#Tiburon li{
+  color: black;
+  font-weight: bold;
+
+}
+
 #2{
   width: 100vw;
   height: 100vh;
