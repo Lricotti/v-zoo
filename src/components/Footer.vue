@@ -7,6 +7,8 @@
       <p>{{ copyRight }}</p>
     </div>
 
+    
+
   </div>
 </template>
 
@@ -40,6 +42,13 @@ export default {
   color: white;
   text-align: center;
 }
+
+{
+  size: 10px;
+  box-shadow: black
+}
+
+
 #brand {
   font-size: 120%;
   font-weight: bold;

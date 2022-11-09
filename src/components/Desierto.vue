@@ -1,6 +1,6 @@
 <template>
   <div id="subscription-main">
-    <Header v-bind:show-button="false"/>
+    <Header v-bind:show-button="false" style="background: #E6B98D"/>
   </div>
   <div id="boxes">
     <div class="firstbox">
@@ -47,8 +47,6 @@
     </div>
   </div>
 
-
-  <Footer/>
 </template>
 
 <script>
@@ -67,7 +65,7 @@ export default {
       habitat1:" Desierto",
       vidapromedio1: " 6 años",
       nombrecientifico1:" Canis latrans",
-      dieta1:" Se alimenta de una gran variedad de presas, incluyendo mamíferos, aves, reptiles, anfibios, peces, crustáceos, artrópodos, carroña, frutas y semillas",
+      dieta1:"Omnivoro",
 
       title2:"CAMELLO",
       habitat2:" Desierto",
@@ -87,44 +85,47 @@ export default {
 </script>
 
 <style scoped>
-#boxes {
-  display: flex;
-  flex-direction: column;
+#boxes{
   padding-top: 100px;
   background: url("../assets/img/desiertofondo.jpeg");
+}
+.firstbox {
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   color: #ffffff;
   font-size: 18px;
   font-weight: 400;
   text-align: center;
   background: #c7a17a;
-  margin: 0 0 25px;
   overflow: hidden;
   padding: 20px;
-  border-radius: 35px 0px 35px 0px;
-  -moz-border-radius: 35px 0px 35px 0px;
-  -webkit-border-radius: 35px 0px 35px 0px;
+  border-radius: 35px 35px 35px 35px;
+  -moz-border-radius: 35px 35px 35px 35px;
+  -webkit-border-radius: 35px 35px 35px 35px;
   border: 2px solid black;
+  max-width: 600px;
+  margin-left: 30%;
+  margin-bottom: 5%;
 }
 .animal1{
   height: 250px;
   border: 5px solid black;
 }
 .secondbox{
-  display: inline;
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   color: #ffffff;
   font-size: 18px;
   font-weight: 400;
   text-align: center;
   background: #c7a17a;
-  margin: 0 0 25px;
   overflow: hidden;
   padding: 20px;
-  border-radius: 35px 0px 35px 0px;
-  -moz-border-radius: 35px 0px 35px 0px;
-  -webkit-border-radius: 35px 0px 35px 0px;
-  border: 2px solid #5878ca;
+  border-radius: 35px 35px 35px 35px;
+  -moz-border-radius: 35px 35px 35px 35px;
+  -webkit-border-radius: 35px 35px 35px 35px;
+  border: 2px solid black;
+  max-width: 600px;
+  margin-left: 30%;
+  margin-bottom: 5%;
 }
 .animal2{
   height: 250px;
@@ -137,14 +138,16 @@ export default {
   font-weight: 400;
   text-align: center;
   background: #c7a17a;
-  margin: 0 0 25px;
   overflow: hidden;
   padding: 20px;
-  border-radius: 35px 0px 35px 0px;
-  -moz-border-radius: 35px 0px 35px 0px;
-  -webkit-border-radius: 35px 0px 35px 0px;
-  border: 2px solid #5878ca;
+  border-radius: 35px 35px 35px 35px;
+  -moz-border-radius: 35px 35px 35px 35px;
+  -webkit-border-radius: 35px 35px 35px 35px;
+  border: 2px solid black;
+  max-width: 600px;
+  margin-left: 30%;
 }
+
 .animal33{
   height: 200px;
   border: 5px solid black;

@@ -80,6 +80,7 @@ export default {
   flex-direction: column;
   flex-wrap: nowrap;
   height: 98vh;
+
 }
 #subscription-container {
   margin-top: 30px;
@@ -87,10 +88,16 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("../assets/img/pada.jpg");
+  background-repeat: repeat;
+  background-size: 100px;
+
 }
 #subscription-container span {
   margin-bottom: 30px;
   font-size: 14px;
+  background-color:white ;
+
 }
 #subscription-form {
   display: flex;
@@ -102,6 +109,9 @@ export default {
   border-radius: 5px;
   text-align: center;
   margin-bottom: 30px;
+  background-color: white;
+  border-color: black;
+  border-width: thick;
 }
 #subscription-form label {
   text-align: left;

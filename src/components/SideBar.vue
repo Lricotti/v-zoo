@@ -45,9 +45,10 @@ export default {
   border: 5px double rgb(109, 55, 55);
   border-radius: 5px;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: -30px;
   height: 1390px;
-  background-color: #228b22;
+  background-color: #ebf5fb;
+  margin-top: -35px;
 
 }
 .fecha{

@@ -1,6 +1,6 @@
 <template>
 <div id="subscription-main">
-<Header v-bind:show-button="false"/>
+<Header v-bind:show-button="false" style="background: #8EB0C2"/>
 </div>
 <div id="boxes">
 <div class="firstbox">
@@ -40,7 +40,6 @@
 
   </div>
 </div>
-<Footer/>
 </template>
 
 <script>
@@ -95,13 +94,15 @@ padding-top: 100px;
   font-weight: 400;
   text-align: center;
   background: #82a1b1;
-  margin: 0 0 25px;
   overflow: hidden;
   padding: 20px;
-  border-radius: 35px 0px 35px 0px;
-  -moz-border-radius: 35px 0px 35px 0px;
-  -webkit-border-radius: 35px 0px 35px 0px;
+  border-radius: 35px 35px 35px 35px;
+  -moz-border-radius: 35px 35px 35px 35px;
+  -webkit-border-radius: 35px 35px 35px 35px;
   border: 2px solid black;
+  max-width: 600px;
+  margin-left: 30%;
+  margin-bottom: 5%;
 }
 
 .secondbox{
@@ -112,13 +113,15 @@ padding-top: 100px;
   font-weight: 400;
   text-align: center;
   background: #82a1b1;
-  margin: 0 0 25px;
   overflow: hidden;
   padding: 20px;
-  border-radius: 35px 0px 35px 0px;
-  -moz-border-radius: 35px 0px 35px 0px;
-  -webkit-border-radius: 35px 0px 35px 0px;
+  border-radius: 35px 35px 35px 35px;
+  -moz-border-radius: 35px 35px 35px 35px;
+  -webkit-border-radius: 35px 35px 35px 35px;
   border: 2px solid black;
+  max-width: 600px;
+  margin-left: 30%;
+  margin-bottom: 5%;
 }
 
 .thirdbox{
@@ -129,13 +132,14 @@ padding-top: 100px;
   font-weight: 400;
   text-align: center;
   background: #82a1b1;
-  margin: 0 0 25px;
   overflow: hidden;
   padding: 20px;
-  border-radius: 35px 0px 35px 0px;
-  -moz-border-radius: 35px 0px 35px 0px;
-  -webkit-border-radius: 35px 0px 35px 0px;
+  border-radius: 35px 35px 35px 35px;
+  -moz-border-radius: 35px 35px 35px 35px;
+  -webkit-border-radius: 35px 35px 35px 35px;
   border: 2px solid black;
+  max-width: 600px;
+  margin-left: 30%;
 }
 
 .animal1{
