@@ -40,7 +40,11 @@ export default {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  background-color: lightseagreen ;
+  background-image: url("../assets/img/zorro-wallpaper.jpg") ;
+  background-repeat: repeat;
+  background-attachment: fixed;
+
+
 }
 #home-container {
   display: flex;
@@ -48,14 +52,18 @@ export default {
   flex-wrap: wrap;
   margin-bottom: -100px;
 
+
+
 }
 #div-SideBar {
-  margin-top: -75px;
+  margin-top: -117px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin-left: -10px;
-  margin-bottom: -1px;
+  margin-bottom: -100px;
+
+
 }
 #div-Home{
   display: flex;
@@ -64,8 +72,21 @@ export default {
   margin-top: 157px;
 }
 
-h1{
-  margin-left: 335px;
+h1 {
+
+  margin-top: auto;
+  margin-left: 310px;
+  font-family: "Roboto Light";
+  font-size: 400%;
+  background-color: white;
+  border-color: black;
+  border-bottom: black;
+  opacity: 90%;
+
+
+
+
+
 }
 
 
