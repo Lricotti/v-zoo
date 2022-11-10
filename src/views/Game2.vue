@@ -135,8 +135,8 @@ export default {
   },
   methods:{
 
-    dice: function () {
 
+    dice: function () {
       if(Math.floor(Math.random()*6 + 1) === 1){
         this.puntaje += 1, this.vida -= 5, this.hambre -=5
       }
@@ -154,18 +154,9 @@ export default {
       }
       else if(Math.floor(Math.random()*6 + 1) == 6)
       {this.puntaje += 6, this.energia -=5, this.felicidad -=15, this.vida -=10}
-
-      if (this.vida <0)
-        {alert("Perdiste")}
-      if (this.energia <0)
-        {alert("Perdiste")}
-      if (this.hambre <0)
-        {alert("Perdiste")}
-      if (this.felicidad <0)
-        {alert("Perdiste")}
-
     },
-
+    
+    
     punch: function() {
       if(this.vida < 96)
       {this.vida += 5}
