@@ -43,10 +43,6 @@ export default {
   text-align: center;
 }
 
-{
-  size: 10px;
-  box-shadow: black
-}
 
 
 #brand {

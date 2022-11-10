@@ -1,6 +1,6 @@
 <template>
 <div id="subscription-main">
-<Header v-bind:show-button="false" style="background: #8EB0C2"/>
+<Header v-bind:show-button="false" style="background: radial-gradient(#8EB0C2,lightcyan)"/>
 </div>
 <div id="boxes">
 <div class="firstbox">
@@ -83,7 +83,6 @@ export default {
 padding-top: 100px;
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
   background: url("../assets/img/tundrafondo.jpeg");
 }
 .firstbox{

@@ -81,11 +81,6 @@ h1 {
   border-color: black;
   border-bottom: black;
   opacity: 90%;
-
-
-
-
-
 }
 
 

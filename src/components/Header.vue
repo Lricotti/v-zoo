@@ -8,7 +8,7 @@
     <div id="Medio_Del_Header">
     <div id="Home_Game">
       <nav>
-        <span class="s">
+        <span class="router">
           <router-link to="/">Home</router-link>
         </span>
         <router-link to="/game">Game</router-link>
@@ -132,7 +132,7 @@ img {
   color: #fff;
   font-weight: bold;
 }
-.s{
+.router{
   padding-right: 50px;
 }
 nav{

@@ -65,29 +65,13 @@ export default {
   margin-left: 20px;
   margin-right: 20px;
   box-shadow: 7px 10px 15px black;
-
-
-
-
-}
-. p{
-  font-size: 3rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  bottom: 50%;
-  right: 50%;
 }
 .aguapic{
   width: 300px;
   height: 300px;
-
   margin-left: 20px;
   margin-right: 20px;
   box-shadow: 7px 10px 15px black;
-
-
-
 }
 .desiertopic{
   width: 300px;
@@ -95,20 +79,13 @@ export default {
   margin-left: 20px;
   margin-right: 20px;
   box-shadow: 7px 10px 15px black;
-
-
-
 }
 .tundrapic{
   width: 300px;
   height: 300px;
-
   margin-left: 20px;
   margin-right: 20px;
   box-shadow: 7px 10px 15px black;
-
-
-
 }
 .selvapic:hover{
   opacity: 0.6;
@@ -124,8 +101,6 @@ export default {
 }
 .desiertopic:hover{
   opacity: 0.6;
-
-
 }
 
 #selva{
@@ -147,15 +122,6 @@ h2{
   font-size: 40px;
   font-family: "Roboto Light";
 
-}
-
-
-
-.home-img:hover {
-  opacity: 0.7;
-}
-.button-box:hover {
-  background-color: #3e1c08;
 }
 img {
   max-width: 420px;

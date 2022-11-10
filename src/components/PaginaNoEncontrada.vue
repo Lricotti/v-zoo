@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header/>
-    <br>
+    <br> <br>
     <h1>No encontramos la página :'(</h1>
   </div>
 </template>
