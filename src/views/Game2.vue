@@ -156,13 +156,13 @@ export default {
       {this.puntaje += 6, this.energia -=5, this.felicidad -=15, this.vida -=10}
 
       if (this.vida <=0)
-        {alert("Me mori :(. Volve a reiniciar, para jugar")}
+        {alert("Me mori, mi vida es demasiado baja"), this.restart()}
       if (this.energia <=0)
-        {alert("Esta muy cansado. Volve a reiniciar, para jugar.")}
+        {alert("Estoy muy cansado, me voy a dormir. Suerte en la proxima partida"), this.restart()}
       if (this.hambre <=0)
-        {alert("Estoy con mucha hambre. Volve a reiniciar, para jugar.")}
+        {alert("Estoy con mucha hambre. Tendras que comenzar denuevo."), this.restart()}
       if (this.felicidad <=0)
-        {alert("Estoy muy triste. Volve a reiniciar, para jugar.")}
+        {alert("Estoy muy triste, como para seguir jugando."), this.restart()}
 
     },
 
