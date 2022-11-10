@@ -155,14 +155,14 @@ export default {
       else if(Math.floor(Math.random()*6 + 1) == 6)
       {this.puntaje += 6, this.energia -=5, this.felicidad -=15, this.vida -=10}
 
-      if (this.vida <0)
-        {alert("Perdiste")}
-      if (this.energia <0)
-        {alert("Perdiste")}
-      if (this.hambre <0)
-        {alert("Esta con mucha hambre. Volve a reiniciar, para jugar.")}
-      if (this.felicidad <0)
-        {alert("Esta muy triste. Volve a reiniciar, para jugar.")}
+      if (this.vida <=0)
+        {alert("Me mori :(. Volve a reiniciar, para jugar")}
+      if (this.energia <=0)
+        {alert("Esta muy cansado. Volve a reiniciar, para jugar.")}
+      if (this.hambre <=0)
+        {alert("Estoy con mucha hambre. Volve a reiniciar, para jugar.")}
+      if (this.felicidad <=0)
+        {alert("Estoy muy triste. Volve a reiniciar, para jugar.")}
 
     },
 
