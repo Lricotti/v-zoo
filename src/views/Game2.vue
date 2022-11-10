@@ -11,8 +11,8 @@
 
 
     <h2 id="Titulo"> Juego interactivo con tu animal favorito</h2>
-    <h4 v-if="animal==0" style="font-family: fantasy;">Seleccione el animal con el que desea continuar....</h4>
-    <input v-else id="animal-button" type="button" value="Cambiar de animal" v-on:click="animal=0">
+    <h4 v-if="animal==0" style="font-family: 'Noto Sans Old Italic';">Seleccione el animal con el que desea continuar....</h4>
+    <input v-else id="animal-button" type="button" value="Cambiar de animal" v-on:click="animal=0, restart()">
     <div id="fotos">
       <h3 id="que_animal" v-if="animal>0"> ¡ {{ nombre }} !</h3>
       <img v-if="animal==1 || animal==0" @click="show_1" src="../assets/img/tiburon.jpg" id="animal_1" width="310" height="163">
@@ -25,36 +25,36 @@
     <div v-if="animal>0" id="botones">
 
       <div>
-        <input class="punch-button" type="button" value="🥊" v-on:click="punch">
+        <input v-if="variable==1" class="punch-button" type="button" value="❤️" v-on:click="punch(), variable = 0">
        <div id="vida">
-          <p>Vida del {{ nombre }}</p> <div v-bind:style="{width: vida + '%' }"></div>
+          <p>Vida del {{ nombre }}</p> <div v-bind:style="{width: vida + '%' }">{{vida}}</div>
        </div>
       </div>
       <div>
-        <input class="Alimentar-button" type="button" value="🍽" v-on:click="eat()">
+        <input v-if="variable==1" class="Alimentar-button" type="button" value="🍽" v-on:click="eat(), variable = 0">
         <div id="hambre">
-          <p>Hambre del {{ nombre }}</p> <div v-bind:style="{width: hambre + '%' }"></div>
+          <p>Hambre del {{ nombre }}</p> <div v-bind:style="{width: hambre + '%' }">{{hambre}}</div>
         </div>
       </div>
       <input v-if="animal>0" class="restart-button" type="button" style="color: green" value="Restart values" v-on:click="restart()">
       <p>Puntaje: {{puntaje}}</p>
-      <input v-if="variable==0" class="dice-button" type="button" style="color: green" value="Roll dice" v-on:click="dice()">
+      <input class="dice-button" type="button" style="color: green" value="Roll dice" v-on:click="dice(), variable = 1">
       <div>
-        <input class="dormir-button" type="button" value="💤" v-on:click="sleep()">
+        <input v-if="variable==1" class="dormir-button" type="button" value="💤" v-on:click="sleep(), variable = 0">
         <div id="energia">
-          <p>Energia del {{ nombre }}</p> <div v-bind:style="{width: energia + '%' }"></div>
+          <p>Energia del {{ nombre }}</p> <div v-bind:style="{width: energia + '%' }">{{energia}}</div>
         </div>
       </div>
       <div>
-        <input class="jugar-button" type="button" value="⚽️" v-on:click="play()">
+        <input v-if="variable==1" class="jugar-button" type="button" value="⚽️" v-on:click="play(), variable = 0">
         <div id="felicidad">
-          <p>Felicidad del {{ nombre }}</p> <div v-bind:style="{width: felicidad + '%' }"></div>
+          <p>Felicidad del {{ nombre }}</p> <div v-bind:style="{width: felicidad + '%' }">{{felicidad}}</div>
         </div>
       </div>
     </div>
 
     <div>
-      <h3 v-if="animal!=0" style="text-decoration: underline; color: black;">5 Datos Curiosos del {{nombre}} que probablemente no conocias...!</h3>
+      <h3 v-if="animal!=0" style="text-decoration: underline; color: black;">5 Datos Curiosos del {{nombre}} que probablemente no conocias</h3>
       <ul v-if="animal==1" id="Datos">
           <li>No tienen huesos</li>
               Sus esqueletos están hechos de cartílagos, esto los hace más ligeros y les da flexibilidad, lo que les permite moverse con facilidad y ser veloces.
@@ -134,70 +134,52 @@ export default {
     }
   },
   methods:{
+
+
     dice: function () {
-      if(Math.ceil(Math.random()*6) == 1){
+      if(Math.floor(Math.random()*6 + 1) === 1){
         this.puntaje += 1, this.vida -= 5, this.hambre -=5
       }
-      else if(Math.ceil(Math.random()*6) == 2){
+      else if(Math.floor(Math.random()*6 + 1) == 2){
         this.puntaje += 2, this.vida -= 10
       }
-      else if(Math.ceil(Math.random()*6) == 3){
-        this.puntaje += 3, this.energia -= 5, this.felicidad -=10
+      else if(Math.floor(Math.random()*6 + 1) == 3){
+        this.puntaje += 3, this.energia -= 20, this.felicidad -=10
       }
-      else if(Math.ceil(Math.random()*6) == 4){
+      else if(Math.floor(Math.random()*6 + 1) == 4){
         this.puntaje += 4, this.hambre -= 15
       }
-      else if(Math.ceil(Math.random()*6) == 5){
+      else if(Math.floor(Math.random()*6 + 1) == 5){
         this.puntaje += 5, this.energia -= 10, this.hambre -=5
       }
-      if(Math.ceil(Math.random()*6) == 6){
-        this.puntaje += 6}
+      else if(Math.floor(Math.random()*6 + 1) == 6)
+      {this.puntaje += 6, this.energia -=5, this.felicidad -=15, this.vida -=10}
     },
     
     
     punch: function() {
-      if(this.vida > 21)
-      {this.vida -= 20}
-      else if(alert("Vida muy baja"))
-      if(this.felicidad > 21){
-      this.felicidad -= 20}
-      else if(alert("Esta muy triste, porque no juegan un rato?"))
-      if(this.hambre>11){
-        this.hambre -= 10}
-      else (alert("Necesita comer"))
+      if(this.vida < 96)
+      {this.vida += 5}
+      else if(alert("Vida llena :)"));
     },
 
     eat: function() {
-      if(this.vida<= 95)
-      {this.vida += 5}
-      if(this.felicidad<= 90){
-        this.felicidad += 10}
-      if(this.hambre<=75){
-        this.hambre += 25}
-      if(this.energia<=90){
-        this.energia += 10}
+      if(this.hambre< 96)
+      {this.hambre += 5}
+      else if(alert("Ya no necesita comer!"));
     },
 
     sleep: function() {
-      if(this.vida<=85)
-      {this.vida += 15}
-      if(this.felicidad > 11){
-        this.felicidad -= 10}
-      if(this.hambre>16){
-        this.hambre -= 15}
-      if(this.energia<=50){
-        this.energia += 50
-      }
-    },
-    play: function() {
-      if(this.felicidad<= 92){
-        this.felicidad +=8}
-      if(this.hambre>16){
-        this.hambre -= 15}
-      if(this.energia >31){
-        this.energia -= 30}
+      if(this.energia < 96)
+      {this.energia += 5}
+      else if(alert("No hace falta dormir, si la energia esta al tope de potencia"));
     },
 
+    play: function() {
+      if(this.felicidad < 96)
+      {this.felicidad += 5}
+      else if(alert("Mejor hagamos otra cosa, no quiere jugar ahora. Parece que ya esta muy feliz <3"));
+    },
 
     restart() {
       this.vida = 100
@@ -205,6 +187,7 @@ export default {
       this.hambre = 100
       this.felicidad = 100
       this.puntaje = 0
+      this.variable = 0
     },
     show_1() {
       this.animal = 1
@@ -263,7 +246,7 @@ export default {
 }
 #energia div{
   height: 20px;
-  background: yellow;
+  background: darkgreen;
 }
 #felicidad{
   background: ghostwhite;
@@ -279,7 +262,8 @@ export default {
 #Titulo{
   color: black;
   font-weight: 900;
-  font-family: fantasy;
+  ont-family: "Freestyle Script";
+  font-style: italic;
   font-size: xx-large;
 }
 #Datos{
