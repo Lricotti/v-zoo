@@ -160,9 +160,9 @@ export default {
       if (this.energia <0)
         {alert("Perdiste")}
       if (this.hambre <0)
-        {alert("Perdiste")}
+        {alert("Esta con mucha hambre. Volve a reiniciar, para jugar.")}
       if (this.felicidad <0)
-        {alert("Perdiste")}
+        {alert("Esta muy triste. Volve a reiniciar, para jugar.")}
 
     },
 
